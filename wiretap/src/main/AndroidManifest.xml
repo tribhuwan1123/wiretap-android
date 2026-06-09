@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Network interception requires internet permission (inherited from app) -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- LocalBridge HTTP server: localhost only, debug builds only -->
+    <!-- Floating overlay bubble -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <!-- BLE scanning -->
+    <uses-permission android:name="android.permission.BLUETOOTH" android:maxSdkVersion="30" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" android:maxSdkVersion="30" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+
+    <!-- NFC -->
+    <uses-permission android:name="android.permission.NFC" />
+
+    <application>
+        <activity
+            android:name="com.wiretap.ui.WireTapActivity"
+            android:exported="false"
+            android:theme="@style/Theme.WireTapSample"
+            android:label="WireTap Inspector" />
+
+        <service
+            android:name="com.wiretap.overlay.WireTapOverlayService"
+            android:exported="false" />
+    </application>
+</manifest>

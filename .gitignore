@@ -1,0 +1,20 @@
+# Gradle
+.gradle/
+build/
+**/build/
+local.properties
+
+# Android Studio / IntelliJ
+.idea/
+*.iml
+*.iws
+*.ipr
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Maven local publish artifacts (not part of source)
+# ~/.m2 is outside this repo so nothing to ignore
+
+# macOS
+.DS_Store
