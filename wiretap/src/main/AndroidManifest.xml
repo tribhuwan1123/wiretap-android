@@ -21,7 +21,7 @@
         <activity
             android:name="com.wiretap.ui.WireTapActivity"
             android:exported="false"
-            android:theme="@style/Theme.WireTapSample"
+            android:theme="@style/Theme.WireTap"
             android:label="WireTap Inspector" />
 
         <service
