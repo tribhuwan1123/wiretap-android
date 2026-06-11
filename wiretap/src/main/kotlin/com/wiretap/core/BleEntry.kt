@@ -40,7 +40,6 @@ data class BleEntry(
         CONNECTION_STATE_CHANGED("Connection State Changed"),
         RELIABLE_WRITE_COMPLETED("Reliable Write Completed")
     }
-
     val rawBytes: ByteArray?
         get() = rawHex?.chunked(2)?.map { it.toInt(16).toByte() }?.toByteArray()
 }
